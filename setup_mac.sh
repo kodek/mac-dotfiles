@@ -2,6 +2,11 @@ echo "Do not run directly! Only use as reference."
 
 exit 1
 
+# Set git commit settings. You'll need these to update this repo.
+# TODO: Automate getting email.
+git config --global user.email "you@example.com"
+git config --global user.name "`osascript -e "long user name of (system info)"`"
+
 # TODO: Provide actual VIM settings.
 echo "imap jk <Esc>" >> ~/.vimrc
 echo "imap jk <Esc>" >> ~/.ideavimrc
