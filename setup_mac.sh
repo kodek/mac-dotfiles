@@ -1,4 +1,4 @@
-echo Do not run directly! Only use as reference.
+echo "Do not run directly! Only use as reference."
 
 exit 1
 
