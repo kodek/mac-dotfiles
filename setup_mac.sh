@@ -78,3 +78,5 @@ defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
 # Disable auto-correct
 defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 
+# Configure zsh (See file first!)
+cat zshrc >> ~/.zshrc
