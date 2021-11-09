@@ -248,6 +248,8 @@
 			<string>9EF18B9A-A5EE-4D3F-8EFA-7B48ED21198D</string>
 			<key>Horizontal Spacing</key>
 			<real>1</real>
+			<key>Icon</key>
+			<integer>1</integer>
 			<key>Idle Code</key>
 			<integer>0</integer>
 			<key>Initial Use Transparency</key>
