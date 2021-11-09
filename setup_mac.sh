@@ -54,11 +54,10 @@ brew install --cask ${CASKS[@]}
 # TODO: Add SteerMouse settings
 # TODO: Automatically import BetterTouchTool settings
 
-# Settings
+# Set key repeat behavior
 defaults write -g ApplePressAndHoldEnabled -bool false
-# Fast key repeat rate
-defaults write NSGlobalDomain KeyRepeat -int 0
-defaults write NSGlobalDomain IniitalKeyRepeat -int 35
+defaults write NSGlobalDomain KeyRepeat -int 2
+defaults write NSGlobalDomain InitialKeyRepeat -int 25
 
 # Disable smooth scrolling
 defaults write -g NSScrollAnimationEnabled -bool false
@@ -77,6 +76,17 @@ defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
 
 # Disable auto-correct
 defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
+
+# Dock
+defaults write com.apple.dock "autohide" -bool "true"
+# Speed up "show" animation.
+defaults write com.apple.dock "autohide-time-modifier" -float "0.2"
+# Speed up delay before dock is shown.
+defaults write com.apple.dock "autohide-delay" -float "0"
+defaults write com.apple.dock "orientation" -string "left"
+# Restart it
+killall Dock
+
 
 # Configure zsh (See file first!)
 cat .zshrc >> ~/.zshrc
