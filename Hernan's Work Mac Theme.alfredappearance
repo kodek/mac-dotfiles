@@ -1,0 +1,65 @@
+{
+  "alfredtheme" : {
+    "result" : {
+      "textSpacing" : 5,
+      "subtext" : {
+        "size" : 15,
+        "colorSelected" : "#FFFFFFCB",
+        "font" : "Avenir",
+        "color" : "#FFFFFF7F"
+      },
+      "shortcut" : {
+        "size" : 23,
+        "colorSelected" : "#FFFFFFFF",
+        "font" : "Avenir",
+        "color" : "#FFFFFF59"
+      },
+      "backgroundSelected" : "#1D6488FF",
+      "text" : {
+        "size" : 22,
+        "colorSelected" : "#FFFFFFE8",
+        "font" : "Avenir",
+        "color" : "#FFFFFFDB"
+      },
+      "iconPaddingHorizontal" : 9,
+      "roundness" : 0,
+      "paddingVertical" : 12,
+      "iconSize" : 51
+    },
+    "search" : {
+      "backgroundSelected" : "#144863FF",
+      "paddingHorizontal" : 24,
+      "spacing" : 0,
+      "text" : {
+        "size" : 64,
+        "colorSelected" : "#FFFFFFFF",
+        "font" : "Avenir",
+        "color" : "#FFFFFFFF"
+      },
+      "background" : "#00000000",
+      "roundness" : 0,
+      "paddingVertical" : 0
+    },
+    "window" : {
+      "color" : "#1448637F",
+      "paddingHorizontal" : 17,
+      "width" : 803,
+      "borderPadding" : 0,
+      "borderColor" : "#0000003F",
+      "blur" : 0,
+      "roundness" : 8,
+      "paddingVertical" : 18
+    },
+    "credit" : "Hernan",
+    "visualEffectMode" : 2,
+    "separator" : {
+      "color" : "#CBCBCBF3",
+      "thickness" : 0
+    },
+    "scrollbar" : {
+      "color" : "#1D6488FF",
+      "thickness" : 2
+    },
+    "name" : "Hernan's theme"
+  }
+}
