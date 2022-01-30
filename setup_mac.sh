@@ -14,6 +14,11 @@ echo "imap jk <Esc>" >> ~/.ideavimrc
 # Install Homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
+# Install Homebrew apps. Alternatively, use Brewbundle. It was generated via:
+# brew bundle dump --describe
+# To install:
+brew bundle install
+
 brew install fzf
 # To install useful key bindings and fuzzy completion:
 $(brew --prefix)/opt/fzf/install
