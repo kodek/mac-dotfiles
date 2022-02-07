@@ -5,4 +5,10 @@ brew bundle dump \
   --force \
   --describe
 
-echo "Done! Don't forget to review and clean up file before committing!"
+echo "Done!"
+echo
+echo "----------------------------------"
+git diff -U1 Brewfile
+echo "----------------------------------"
+echo
+echo "Don't forget to review and clean up file before committing!"
