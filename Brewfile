@@ -1,10 +1,15 @@
+tap "cloudflare/cloudflare"
 tap "homebrew/bundle"
 tap "homebrew/cask"
+tap "homebrew/cask-drivers"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
+tap "teamookla/speedtest"
 tap "zero-sh/tap"
 # Manage your dotfiles across multiple diverse machines, securely
 brew "chezmoi"
+# Make creating custom firmwares for ESP32/ESP8266 super easy
+brew "esphome"
 # Command-line fuzzy finder written in Go
 brew "fzf"
 # Keep your Mac's application settings in sync
@@ -15,10 +20,10 @@ brew "mas"
 brew "node"
 # Better and friendly vi(vim) mode plugin for ZSH
 brew "zsh-vi-mode"
-# Small tool to set macOS user defaults from a YAML file
-brew "zero-sh/tap/apply-user-defaults"
-# Radically simple personal bootstrapping tool for macOS
-brew "zero-sh/tap/zero"
+# Cloudflare Tunnel
+brew "cloudflare/cloudflare/cloudflared", link: false
+# Ookla Speedtest
+brew "teamookla/speedtest/speedtest"
 # Application launcher and productivity software
 cask "alfred"
 # Menu bar icon organizer
@@ -41,10 +46,10 @@ cask "google-drive"
 cask "istat-menus"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
-# Privacy-first, open-source platform for knowledge sharing and management
-cask "logseq"
 # Knowledge base that works on top of a local folder of plain text Markdown files
 cask "obsidian"
+# Control your Sonos system
+cask "sonos"
 # Video game digital distribution service
 cask "steam"
 # Customize mouse buttons, wheels and cursor speed
