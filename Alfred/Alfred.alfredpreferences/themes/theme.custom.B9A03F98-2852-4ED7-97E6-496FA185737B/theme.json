@@ -28,7 +28,7 @@
     },
     "search" : {
       "backgroundSelected" : "#144863FF",
-      "paddingHorizontal" : 47,
+      "paddingHorizontal" : 1,
       "spacing" : 0,
       "text" : {
         "size" : 64,

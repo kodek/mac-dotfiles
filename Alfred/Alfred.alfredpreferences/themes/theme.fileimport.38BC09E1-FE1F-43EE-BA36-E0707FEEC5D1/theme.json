@@ -14,7 +14,7 @@
         "font" : "Avenir",
         "color" : "#FFFFFF59"
       },
-      "backgroundSelected" : "#1D6488FF",
+      "backgroundSelected" : "#227DABC2",
       "text" : {
         "size" : 22,
         "colorSelected" : "#FFFFFFE8",
@@ -22,7 +22,7 @@
         "color" : "#FFFFFFDB"
       },
       "iconPaddingHorizontal" : 9,
-      "roundness" : 0,
+      "roundness" : 8,
       "paddingVertical" : 12,
       "iconSize" : 51
     },
@@ -43,7 +43,7 @@
     "window" : {
       "color" : "#1448637F",
       "paddingHorizontal" : 17,
-      "width" : 803,
+      "width" : 959,
       "borderPadding" : 0,
       "borderColor" : "#0000003F",
       "blur" : 0,
@@ -58,7 +58,7 @@
     },
     "scrollbar" : {
       "color" : "#1D6488FF",
-      "thickness" : 2
+      "thickness" : 9
     },
     "name" : "Hernan's theme"
   }
