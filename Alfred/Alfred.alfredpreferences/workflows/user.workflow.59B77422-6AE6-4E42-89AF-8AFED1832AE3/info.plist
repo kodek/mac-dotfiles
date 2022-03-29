@@ -131,16 +131,16 @@ height=${split2}
 scaling=${split3}
 
 /opt/homebrew/bin/displayplacer \
-"id:86C4E26F-88FF-449C-95B8-3D7AF371F5A3 \
+"id:${LEFT_MONITOR} \
   res:${width}x${height} scaling:${scaling} origin:(0,0) degree:0" \
-"id:110CC005-BF97-4E1E-AE82-BAB8CFC7C33F \
+"id:${RIGHT_MONITOR} \
   res:${width}x${height} scaling:${scaling} origin:(${split1},0) degree:0" 2&gt;&amp;1
 
 
 if [ "${PIPESTATUS[0]}" -eq "0" ]; then
   echo "Success! Set resolution to ${split1}x${split2} scaling:${scaling}"
 else
-  return ${PIPESTATUS[0]}
+  echo ${PIPESTATUS[0]}
 fi</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
@@ -310,6 +310,15 @@ fi</string>
 			<integer>165</integer>
 		</dict>
 	</dict>
+	<key>variables</key>
+	<dict>
+		<key>LEFT_MONITOR</key>
+		<string>6AD41885-B8F8-4C1B-BCE4-977DA444DC81</string>
+		<key>RIGHT_MONITOR</key>
+		<string>6E2959A6-98DD-4CB3-8DBC-DC61C7439366</string>
+	</dict>
+	<key>version</key>
+	<string></string>
 	<key>webaddress</key>
 	<string></string>
 </dict>
