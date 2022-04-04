@@ -22,3 +22,11 @@ zvm_after_init() {
   # Fuzzy find.
   [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 }
+
+# Autocomplete like bash (don't cycle through ambiguous options).
+setopt noautomenu 
+
+# Generated with https://zsh-prompt-generator.site/
+#   user@host ~/current >            Sun 17 12:28PM
+PROMPT="%B%F{10}%n%f%b@%m %B%~%b%B > %b"
+RPROMPT="%w%t"
