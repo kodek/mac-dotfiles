@@ -1,0 +1,61 @@
+---
+- name: Autohide dock
+  osx_defaults:
+    domain: "com.apple.Dock"
+    key: "{{ item.key }}"
+    type: "{{ item.type }}"
+    value: "{{ item.value }}"
+  with_items:
+    - key: autohide
+      type: bool
+      value: true
+    - key: autohide-time-modifier
+      type: float
+      value: 0.2
+    - key: autohide-delay
+      type: float
+      value: 0.0
+  notify: Restart Dock
+
+- name: Set keyboard settings
+  osx_defaults:
+    domain: "NSGlobalDomain"
+    key: "{{ item.key }}"
+    type: "{{ item.type }}"
+    value: "{{ item.value }}"
+  with_items:
+    - key: ApplePressAndHoldEnabled
+      type: bool
+      value: False
+    - key: KeyRepeat
+      type: int
+      value: 2
+    - key: InitialKeyRepeat
+      type: int
+      value: 25
+    - key: NSAutomaticCapitalizationEnabled
+      type: bool
+      value: False
+    - key: NSAutomaticPeriodSubstitutionEnabled
+      type: bool
+      value: False
+    - key: NSAutomaticQuoteSubstitutionEnabled
+      type: bool
+      value: False
+    - key: NSAutomaticSpellingCorrectionEnabled
+      type: bool
+      value: False
+
+- name: Disable smooth scrolling
+  osx_defaults:
+    domain: "NSGlobalDomain"
+    key: NSScrollAnimationEnabled
+    type: bool
+    value: False
+
+  with_items:
+    - key: ApplePressAndHoldEnabled
+      type: bool
+      value: False
+
+

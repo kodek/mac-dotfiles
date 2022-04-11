@@ -1,0 +1,37 @@
+---
+- name: Update Homebrew
+  homebrew:
+    update_homebrew: true
+
+- name: Upgrade Homebrew packages
+  homebrew:
+    upgrade_all: true
+
+- name: Install Homebrew packages (non-casks)
+  homebrew:
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - ansible
+    - fzf
+    - mas
+    - zsh-vi-mode
+
+- name: Install Homebrew packages (casks)
+  homebrew_cask:
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - 1password-beta
+    - alfred
+    - bartender
+    - bettertouchtool
+    - divvy
+    - google-chrome
+    - istat-menus
+    - iterm2
+    - sonos
+    - soulver
+    - steermouse
+    - visual-studio-code
+    - xmind-zen
