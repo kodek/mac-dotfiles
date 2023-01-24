@@ -208,7 +208,7 @@ The workflow expects Soulver to be installed at the default location (/Applicati
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.0.1</string>
+	<string>1.0.4</string>
 	<key>webaddress</key>
 	<string>https://soulver.app</string>
 </dict>
